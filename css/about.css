@@ -1,0 +1,54 @@
+.about {
+    padding-top: 155px;
+    padding-bottom: 80px;
+    background-image: url("../img/stripes-left.png");
+    background-position: top 110px left 0;
+    background-size: 180px;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    margin-left: calc((100% - 1160px) / 2);
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.about-images img {
+    width: 100%;
+    align-self: stretch;
+}
+
+.about-images img:nth-child(2) {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.about-content h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.2em;
+    color: #0A0B21;
+    margin-bottom: 5px;
+}
+
+.about-content h3 {
+    color: #0A0B21;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #52575C;
+}

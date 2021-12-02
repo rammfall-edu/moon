@@ -2,13 +2,24 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("../img/eggs.png"), url("../img/giodze.png"), url("../img/dish.png"), url("../img/hero.png");
+    background-size: 360px, 400px, 829px, cover;
+    background-repeat: no-repeat;
+    background-position: top left, bottom left, right 9.3%, center;
 }
 
 .header {
     padding: 40px 0;
     color: #0A0B21;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color .3s;
+}
+
+.header-fixed {
+    background-color: #FFBE0088;
 }
 
 .header > div {
@@ -52,4 +63,32 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.hero-container {
+    width: 464px;
+}
+
+h1 {
+    color: #0A0B21;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    display: block;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.18;
+    margin-top: 5px;
+    letter-spacing: normal;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #52575C;
+    margin-bottom: 50px;
 }

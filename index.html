@@ -56,19 +56,21 @@
 
         <div class="hero-content">
             <div class="container">
-                <h1>
-                    Welcome to
-                    <span>
+                <div class="hero-container">
+                    <h1>
+                        Welcome to
+                        <span>
                         Moon Restaurant
                     </span>
-                </h1>
-                <p>
-                    Non voluptate cupidatat minim cillum anim culpa aute nisi consectetur. Proident aliquip sit esse
-                    laboris dolor exercitation adipisicing aute exercitation sint id ad.
-                </p>
-                <a href="" class="button">
-                    BOOK A TABEL
-                </a>
+                    </h1>
+                    <p>
+                        Non voluptate cupidatat minim cillum anim culpa aute nisi consectetur. Proident aliquip sit esse
+                        laboris dolor exercitation adipisicing aute exercitation sint id ad.
+                    </p>
+                    <a href="" class="button">
+                        BOOK A TABEL
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -106,6 +108,21 @@
     <!--END ABOUT-->
 
 </main>
+
+<script>
+    const header = document.getElementsByClassName('header')[0];
+    const className = 'header-fixed';
+
+    addEventListener('scroll', () => {
+        const y = window.scrollY;
+
+        if (y === 0) {
+            header.classList.remove(className);
+        } else {
+            header.classList.add(className);
+        }
+    })
+</script>
 
 </body>
 </html>
