@@ -1,0 +1,55 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 40px 0;
+    color: #0A0B21;
+    position: sticky;
+    top: 0;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 5.9rem;
+    line-height: 1.18;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-button {
+    min-width: 120px;
+    display: inline-block;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid #FFBE00;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
